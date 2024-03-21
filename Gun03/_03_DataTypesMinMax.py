@@ -11,7 +11,6 @@
 # // System.out.println("Float.MIN_VALUE = " + Float.MIN_VALUE);
 # // System.out.println("Float.MAX_VALUE = " + Float.MAX_VALUE);
 import sys
-import numpy as np
 
 print("Byte.MIN_VALUE =", -128)
 print("Byte.MAX_VALUE =", 127)
