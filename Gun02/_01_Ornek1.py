@@ -1,0 +1,8 @@
+print("Salı")
+print("***************")
+print("S", end="")
+print("a", end="")
+print("l", end="")
+print("ı")
+print("**********************")
+print("S\na\nl\nı")
