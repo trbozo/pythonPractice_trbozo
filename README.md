@@ -4,7 +4,7 @@ Welcome to the `pythonPractice_trbozo` project! This repository is dedicated to 
 
 ## About This Project
 
-This repository was created for those who know the Java language and want to learn Python.
+This repository was created for those who know the <img src="https://img.shields.io/badge/JAVA-grey?style=for-the-badge&logo=java"/> language and want to learn <img src="https://img.shields.io/badge/Python-white?style=for-the-badge&logo=python&logoColor=14354C" />
 
 ### Key Features
 
