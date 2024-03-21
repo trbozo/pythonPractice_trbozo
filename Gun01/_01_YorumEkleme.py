@@ -2,7 +2,7 @@
 if __name__ == "__main__":
     # Ekrana yazdırma komutu
     print("Merhaba Dünya")
-    print("Adımız java")
+    print("Adımız python")
 
     '''
      Bu da birden fazla satırı yorum satırı
