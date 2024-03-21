@@ -18,4 +18,3 @@ print("Short.MIN_VALUE =", -32768)
 print("Short.MAX_VALUE =", 32767)
 print("Integer.MIN_VALUE =", -sys.maxsize - 1)
 print("Integer.MAX_VALUE =", sys.maxsize)
-print("Long.MIN_VALUE =", -
