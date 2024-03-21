@@ -4,7 +4,7 @@ Welcome to the `pythonPractice_trbozo` project! This repository is dedicated to 
 
 ## About This Project
 
-This project contains a variety of Python scripts and exercises that cover different aspects of Python programming. From basic syntax and structures to more advanced topics, `pythonPractice_trbozo` serves as a comprehensive resource for learners at all levels.
+This repository was created for those who know the Java language and want to learn Python.
 
 ### Key Features
 
