@@ -1,3 +1,6 @@
+<img src="https://img.shields.io/badge/Java-11-blue.svg"/>
+<img src="https://img.shields.io/badge/Phyton-3.7-blue.svg"/>
+
 # pythonPractice_trbozo
 
 Welcome to the `pythonPractice_trbozo` project! This repository is dedicated to Python practice and examples, aimed at developing and improving Python coding skills.
