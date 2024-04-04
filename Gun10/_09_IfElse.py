@@ -1,17 +1,31 @@
-#// int saat = 22;
-#// if(saat < 18) {
-#//     System.out.println("İyi günler.");
-#// } else if(saat < 22) {
-##//     System.out.println("İyi akşamlar.");
-#// } else {
-#//     System.out.println("İyi geceler.");
-#// }
+# package Gun10;
+#
+# import java.util.Scanner;
+#
+# public class _09_IfElse {
+#     public static void main(String[] args) {
+#         // Girilen sayı pozitif ve tek sayı ise , ekrana uygun sayı girildi
+#         // degilse uygun sayı girilmedi şeklinde yazdırınız
+#
+#         Scanner oku=new Scanner(System.in);
+#         System.out.print("Sayi=");
+#         int sayi=oku.nextInt();
+#
+#         //int kalan=sayi%2;
+#
+#         if (sayi > 0  &&  sayi%2 ==1 )
+#             System.out.println("Uygun sayı girildi");
+#         else
+#             System.out.println("Uygun sayı girilmedi");
+#     }
+# }
 
 
-saat = 22
-if saat < 18:
-    print("İyi günler.")
-elif saat < 22:
-    print("İyi akşamlar.")
+sayi = int(input("Sayi="))
+
+if sayi > 0 and sayi % 2 == 1:
+    print("Uygun sayı girildi")
 else:
-    print("İyi geceler.")
+    print("Uygun sayı girilmedi")
+
+
