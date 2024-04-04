@@ -1,8 +1,52 @@
-#// int sayi = 9;
-#// String sonuc = (sayi > 5) ? "Sayı 5'ten büyüktür." : "Sayı 5 veya daha küçüktür.";
-#// System.out.println(sonuc);
+# package Gun11;
+#
+# import java.util.Scanner;
+#
+# public class _03_Soru {
+#     public static void main(String[] args) {
+#         // yan yana aralarında bir boslukla girilen 2 int sayının
+#         // birbirine eşit olup olmadığını bulunuz
+#         // 456 67
+#
+#         Scanner oku=new Scanner(System.in);
+#         System.out.print("Yan Yana 1 boluk ile 2 adet sayı giriniz=");
+#         String strSayilar=oku.nextLine(); //4567 6
+#
+#         int boslukIndex= strSayilar.indexOf(" ");
+#         String strSayi1=strSayilar.substring(0, boslukIndex);
+#         String strSayi2=strSayilar.substring(boslukIndex+1);
+#
+#         int sayi1= Integer.parseInt(strSayi1);
+#         int sayi2= Integer.parseInt(strSayi2);
+#
+#         if (sayi1 == sayi2)
+#             System.out.println("EŞİT");
+#         else
+#             System.out.println("DEĞİL");
+#
+#         // 2.Yol
+#         if (strSayi1.equals(strSayi2))
+#             System.out.println("EŞİT");
+#         else
+#             System.out.println("DEĞİL");
+#     }
+# }
 
+# yan yana aralarında bir boşlukla girilen 2 int sayının
+# birbirine eşit olup olmadığını bulunuz
+# 456 67
 
-sayi = 9
-sonuc = "Sayı 5'ten büyüktür." if sayi > 5 else "Sayı 5 veya daha küçüktür."
-print(sonuc)
+str_sayilar = input("Yan yana bir boşluk ile 2 adet sayı giriniz: ")
+sayi1, sayi2 = map(int, str_sayilar.split())
+
+if sayi1 == sayi2:
+    print("EŞİT")
+else:
+    print("DEĞİL")
+
+# 2. Yol
+if str(sayi1) == str(sayi2):
+    print("EŞİT")
+else:
+    print("DEĞİL")
+

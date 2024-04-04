@@ -1,10 +1,21 @@
-# // String cumle="Merhaba Dünya";
+# Java kodunun Python'a dönüştürülmüş hali
+
+# indexOf : Baştan aramaya başlar, oda numarasını verir
+# lastIndexOf : sondan aramaya başlar, yine oda numarasını verir
+# oda numaraları, yani index hep aynıdır, arama yönüne göre DEĞİŞMEZ
+
+#           0123456789012
 cumle = "Merhaba Dünya"
 
-# // System.out.println("indexOf(a) = " + cumle.indexOf("a"));
-# // System.out.println("lastIndexOf(a) = " + cumle.lastIndexOf("a"));
-print(f"indexOf('a') = {cumle.find('a')}")
-print(f"lastIndexOf('a') = {cumle.rfind('a')}")
+print("indexOf(a) = ", cumle.index("a"))  # 4
+print("lastIndexOf(a) = ", cumle.rindex("a"))  # 12
 
 
-##Python'da, rfind() metodu, Java'daki lastIndexOf() metoduna karşılık gelir ve aranan ifadenin en son bulunduğu indeksi döndürür.
+
+#Java'daki indexOf fonksiyonunun Python'daki karşılığı index fonksiyonudur. Ancak Java'daki lastIndexOf fonksiyonunun Python'daki karşılığı rindex fonksiyonudur. Bu fonksiyonlar aynı işlevi yerine getirir: belirtilen değerin dizindeki son konumunu bulurlar.
+
+
+
+
+
+

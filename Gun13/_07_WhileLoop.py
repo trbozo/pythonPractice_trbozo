@@ -1,23 +1,14 @@
-# int i = 0;
-# while(i < 5) {
-#     int j = 0;
-#     while(j < i) {
-#         System.out.print("*");
-#         j++;
-#     }
-#     System.out.println();
-#     i++;
-# }
+# Girilen 6 sayıdan sadece pozitif olanlarının toplamını bul
 
+sayac = 0
+toplam = 0
 
-i = 0
-while i < 5:
-    j = 0
-    while j < i:
-        print("*", end="")
-        j += 1
-    print()  # Yeni bir satıra geçmek için
-    i += 1
+while sayac < 6:
+    sayi = int(input("Sayı giriniz="))
 
+    if sayi > 0:
+        toplam += sayi
 
-# print() fonksiyonunun end parametresi ile aynı satırda birden fazla değer basılabilir
+    sayac += 1
+
+print("toplam =", toplam)

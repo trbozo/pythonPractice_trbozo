@@ -36,3 +36,22 @@
 # }
 
 
+cumle = input("Cümle giriniz=")
+
+# 1.Yöntem
+if len(cumle) > 10 and "study" in cumle.lower():
+    print("EVET")
+else:
+    print("HAYIR")
+
+# 2.Yöntem
+uzunluk = len(cumle)
+var_mi = "study" in cumle.lower()
+
+if uzunluk > 10 and var_mi:
+    print("EVET")
+else:
+    print("HAYIR")
+
+
+#kullanıcıdan bir cümle alır ve bu cümlenin uzunluğunun 10 karakterden büyük olup olmadığını ve içinde "study" kelimesinin (büyük veya küçük harf fark etmeksizin) geçip geçmediğini kontrol eder. Şartlar sağlanıyorsa "EVET", aksi halde "HAYIR" yazdırır. Python'da len() fonksiyonu stringin uzunluğunu verirken, .lower() metodu stringi küçük harfe dönüştürür ve "kelime" in cumle yapısıyla kelimenin cümle içinde geçip geçmediği kontrol edilir.

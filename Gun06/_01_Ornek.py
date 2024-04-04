@@ -13,3 +13,18 @@ cevre = 2 * (uzun_kenar + kisa_kenar)
 alan = uzun_kenar * kisa_kenar
 print("Cevre =", cevre)
 print("Alan =", alan)
+
+
+# Java kodunun Python'a dönüştürülmüş hali
+
+# Bir dikdörtgen tarlanın gerekli kenar(int) uzunluklarını kullanıcıdan
+# isteyip çevresini ve alanını bulunuz ve yazdırınız.
+# cevre = a + b + a + b    alan = a * b
+uzun_kenar = int(input("Uzun Kenarı giriniz="))
+kisa_kenar = int(input("Kısa Kenarı giriniz="))
+
+cevre = uzun_kenar + uzun_kenar + kisa_kenar + kisa_kenar
+alan = uzun_kenar * kisa_kenar
+
+print("Cevre =", cevre)
+print("Alan =", alan)

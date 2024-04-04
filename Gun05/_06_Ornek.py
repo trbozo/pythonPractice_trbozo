@@ -9,3 +9,23 @@ sayi1 = int(input("Sayi1 = "))
 sayi2 = int(input("Sayi2 = "))
 toplam = sayi1 + sayi2
 print("Toplam =", toplam)
+
+
+# Bu Java kodunun Python'a çevrilmiş hali:
+
+import sys
+
+# Kullanıcıdan 2 tam sayı alalım
+print("Sayi1 = ")
+sayi1 = int(input())
+
+print("Sayi2 = ")
+sayi2 = int(input())
+
+# Sayıların toplamını hesaplayalım
+toplam = sayi1 + sayi2
+
+# Toplamı ekrana yazdıralım
+print("Toplam = " + str(toplam))  # 1. Yöntem
+
+print("Toplam = " + str(sayi1 + sayi2))  # 2. Yöntem

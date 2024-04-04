@@ -1,28 +1,30 @@
-# public class Main {
-#     public static void main(String[] args) {
-#         int temperature = 25;
-#         if (temperature > 30) {
-#             System.out.println("Sıcak bir gündesiniz.");
-#         } else if (temperature > 20) {
-#             System.out.println("Ilık bir gündesiniz.");
-#         } else if (temperature > 10) {
-#             System.out.println("Serin bir gündesiniz.");
-#         } else {
-#             System.out.println("Soğuk bir gündesiniz.");
-#         }
-#     }
-# }
+# Kullanıcıdan "Fizik:90" gibi not bilgisini alın
+# >= 90 için A
+# >= 80 için B
+# >= 70 için C
+# >= 60 için D
+# >= 40 için E
+# < 40 için F yazdırın
 
-temperature = 25
-if temperature > 30:
-    print("Sıcak bir gündesiniz.")
-elif temperature > 20:
-    print("Ilık bir gündesiniz.")
-elif temperature > 10:
-    print("Serin bir gündesiniz.")
+not_bilgisi = input("Dersi ve notunu giriniz: ")  # Fizik:90
+
+# Notu almak için iki yöntem var: ":" karakterinden sonra kalanı almak veya sadece sayıları almak
+# İlk yöntem:
+ogr_not = int(not_bilgisi.split(":")[1])
+
+# İkinci yöntem:
+ogr_not = int("".join(filter(str.isdigit, not_bilgisi)))
+
+# Ladder if: merdivenli if
+if ogr_not >= 90:
+    print("A")
+elif ogr_not >= 80:
+    print("B")
+elif ogr_not >= 70:
+    print("C")
+elif ogr_not >= 60:
+    print("D")
+elif ogr_not >= 40:
+    print("E")
 else:
-    print("Soğuk bir gündesiniz.")
-
-
-##Java'daki if-else-if yapısı Python'da benzer şekilde uygulanmaktadır.
-# Her iki dilde de koşullar sırayla değerlendirilir ve ilk doğru koşulun bloğu çalıştırılır.
+    print("F")

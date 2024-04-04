@@ -1,13 +1,22 @@
-# // String s1="Merhaba Java yı sevenler derneği üyeleri";
+# Java kodunun Python'a dönüştürülmüş hali
+
+# Substring  : string den parça alır
+#         012345678901234567
 s1 = "Merhaba Java yı sevenler derneği üyeleri"
 
-# // System.out.println("parca1 = " + s1.substring(3,9));
-# // System.out.println("s1.substring(8,15) = " + s1.substring(8,15));
-# // System.out.println("s1.substring(8) = " + s1.substring(8));
-print(f"parca1 = {s1[3:9]}")
-print(f"s1.substring(8,15) = {s1[8:15]}")
-print(f"s1.substring(8) = {s1[8:]}")
+parca1 = s1[3:9]  # 3 den başla 9 a kadar al
+# 3 parametrede index, 3 den 9 a kadar al, 9 dahil değil
+print("parca1 =", parca1)  # haba J
+
+print("s1[8:15] =", s1[8:15])  # Java yı
+
+print("s1[8:] =", s1[8:])  # verilneden SONA kadar parçayı alır
 
 
-# Bu Python çevirileri, Java'daki string işlemlerinin Python'daki eşdeğerlerini göstermektedir.
-# Python, string işlemleri için oldukça esnek ve güçlü metodlar sunar.
+#Python'da substring metodunun karşılığı olarak dilin dilimleme (slicing) özelliği kullanılır. Bu özellikte, [başlangıç_index:bitiş_index] şeklinde belirtilen aralık, başlangıç indexini (dahil) alırken, bitiş indexini (hariç) alır. Eğer başlangıç indexi belirtilmezse, stringin başlangıcından başlar. Eğer bitiş indexi belirtilmezse, stringin sonuna kadar alır.
+
+
+
+
+
+

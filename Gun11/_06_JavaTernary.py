@@ -1,6 +1,8 @@
-# // int sayi = 10;
-# // String sonuc = sayi > 5 ? "Büyük" : "Küçük";
-# // System.out.println(sonuc);
-sayi = 10
-sonuc = "Büyük" if sayi > 5 else "Küçük"
-print(sonuc)
+# Soru: Girilen bir sayının sıfır mı, negatif mi, pozitif mi olduğunu
+# Ternary operatör ile yazdırınız.
+
+sayi = int(input("Sayı: "))
+
+sonuc = "Sıfır" if sayi == 0 else ("pozitif" if sayi > 0 else "negatif")
+
+print("sonuc =", sonuc)

@@ -1,8 +1,22 @@
-#Python'da replaceFirst doğrudan bir karşılığı yoktur, ancak benzer bir işlev re modülü kullanılarak sağlanabilir.
-# Burada basit bir replace kullanarak ilk bulunanı değiştireceğiz.
+# Java kodunun Python'a dönüştürülmüş hali
 
-# // String text = "Merhaba Dünya";
-# // System.out.println("text.replaceFirst('a','e') = " + text.replaceFirst('a','e'));
-import re
+# replaceFirst: bir stringin içindeki karakter/lerin sadece ilkini
+# verilenle değiştirir
+
 text = "Merhaba Dünya"
-print(f"text.replaceFirst('a', 'e') = {re.sub('a', 'e', text, 1)}")
+print("text = " + text)
+
+print("text.replaceFirst(a, e) = " + text.replace("a", "e", 1))  # Merheba Dünya
+print("text.replaceFirst(ba, de) = " + text.replace("ba", "de", 1))  # Merhade Dünya
+print("text.replaceFirst(a, aaa) = " + text.replace("a", "aaa", 1))  # Merhaaaba Dünya
+print("text.replaceFirst(a,  ) = " + text.replace("a", "", 1))  # Merhba Dünya
+print("text.replaceFirst(a, ***) = " + text.replace("a", "***", 1))  # Merh***ba Dünya
+
+
+#Java'daki replaceFirst() metodu Python'daki replace() metodu ile benzerdir, ancak son parametre olan limit parametresi ile farklılık gösterir. Bu parametre, kaç adet değiştirme işleminin yapılacağını belirler. Python'da ise replace() fonksiyonu kullanılırken bu parametreye gerek yoktur; bunun yerine replace() fonksiyonu sadece belirtilen karakterlerin hepsini değiştirir.
+
+
+
+
+
+
